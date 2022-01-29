@@ -161,9 +161,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-P0-GOk">
+                            <collectionView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-P0-GOk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ubK-Je-tgO">
                                     <size key="itemSize" width="182" height="250"/>
@@ -179,12 +178,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ps-r0-pGu">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ps-r0-pGu">
                                                     <rect key="frame" x="0.0" y="0.0" width="182" height="250"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2ps-r0-pGu" secondAttribute="trailing" id="3Oc-7f-FaC"/>
+                                            <constraint firstAttribute="bottom" secondItem="2ps-r0-pGu" secondAttribute="bottom" id="3To-9t-uTr"/>
+                                            <constraint firstItem="2ps-r0-pGu" firstAttribute="leading" secondItem="ACi-Sc-DSA" secondAttribute="leading" id="AdB-PX-zkc"/>
+                                            <constraint firstItem="2ps-r0-pGu" firstAttribute="top" secondItem="ACi-Sc-DSA" secondAttribute="top" id="IEb-4f-hji"/>
+                                        </constraints>
                                         <size key="customSize" width="182" height="250"/>
                                         <connections>
                                             <outlet property="posterView" destination="2ps-r0-pGu" id="qmD-XB-7bj"/>
@@ -195,6 +199,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dh0-d8-RRB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e6I-P0-GOk" firstAttribute="trailing" secondItem="dh0-d8-RRB" secondAttribute="trailing" id="5uh-sd-wJL"/>
+                            <constraint firstItem="e6I-P0-GOk" firstAttribute="top" secondItem="a9e-2s-DA6" secondAttribute="top" id="Kdr-13-ZIC"/>
+                            <constraint firstAttribute="bottom" secondItem="e6I-P0-GOk" secondAttribute="bottom" id="WQ8-JY-VYU"/>
+                            <constraint firstItem="e6I-P0-GOk" firstAttribute="leading" secondItem="dh0-d8-RRB" secondAttribute="leading" id="j3Z-hd-eAA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Superhero" id="CeB-5J-GH2"/>
                     <connections>
