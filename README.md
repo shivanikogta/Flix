@@ -1,7 +1,10 @@
 # Flix
+
 **Flix** is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 ## User Stories
+
+The following functionality is complete:
 
 - [x] User sees an app icon on the home screen and a styled launch screen.
 - [x] User can view and scroll through a list of movies now playing in theaters.
@@ -10,4 +13,7 @@
 - [x] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 ## App Walkthrough GIF
+
+Here's a walkthrough of the implemented user stories:
+
 ![](gif2.gif)
